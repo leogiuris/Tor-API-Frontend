@@ -1,0 +1,25 @@
+
+<h3>Banned IPs List</h3>
+<p>{{ips.length}} items</p>
+
+<table class="table table-striped table-sm" style="width: 50%;">
+
+	<thead>
+		<tr style="color: red; ">
+			<th scope="col" ></th>
+			<th scope="col" ></th>
+			<th scope="col" >IP Adress</th>
+		</tr>
+	</thead>
+
+	<tbody *ngFor="let ip of ips.slice(0,100)">
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td>{{ip}}</td>
+		</tr>
+
+	</tbody>
+
+</table>
